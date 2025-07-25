@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.945cc36a.css",
-    "main.js": "/static/js/main.03f8971f.js",
+    "main.css": "/static/css/main.0925daf0.css",
+    "main.js": "/static/js/main.3e06894a.js",
     "static/media/heavy vehicle management.png": "/static/media/heavy vehicle management.963b358b14de71bf8c52.png",
     "static/media/Smartfix.png": "/static/media/Smartfix.0371daf7cc2570fdfaaa.png",
     "static/media/Backing ChatBot.jpg": "/static/media/Backing ChatBot.304d49b20f76c7ffd633.jpg",
@@ -32,11 +32,11 @@
     "static/media/glyphicons-halflings-regular.eot": "/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
     "static/media/glyphicons-halflings-regular.woff2": "/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "index.html": "/index.html",
-    "main.945cc36a.css.map": "/static/css/main.945cc36a.css.map",
-    "main.03f8971f.js.map": "/static/js/main.03f8971f.js.map"
+    "main.0925daf0.css.map": "/static/css/main.0925daf0.css.map",
+    "main.3e06894a.js.map": "/static/js/main.3e06894a.js.map"
   },
   "entrypoints": [
-    "static/css/main.945cc36a.css",
-    "static/js/main.03f8971f.js"
+    "static/css/main.0925daf0.css",
+    "static/js/main.3e06894a.js"
   ]
 }

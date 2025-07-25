@@ -778,7 +778,7 @@ function App() {
                   target={"_blank"}
                   className="download-resume-btn btn btn-blue wow bounce animated"
                   role="button"
-                  style={{ visibility: 'visible', animationName: 'bounce' }}
+                  style={{ visibility: 'visible', animationName: 'bounce', fontSize: "16px", padding: "15px 20px" }}
                 >
                   Download Resume
                 </a>
@@ -891,8 +891,7 @@ function App() {
                       <p id="modal-title" className="item-intro text-muted"></p>
                       <img
                         id="modal-image"
-                        className="img-responsive img-centered"
-                        style={{ width: "400px", height: "350px", overflow: "hidden" }}
+                        className="img-responsive img-centered Portfolio-data-img"
                         alt=""
                       />
                       <p id="modal-para"></p>
