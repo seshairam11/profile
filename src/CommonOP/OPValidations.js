@@ -15,7 +15,7 @@ export const OPValidations = () => {
 
   function checkValidateDataType(ctl_attribute) {
     let brewError = {};
-    if (ctl_attribute.inputvalue != "") {
+    if (ctl_attribute.inputvalue !== "") {
       switch (ctl_attribute.validate.datatype) {
         case "email":
           let retvalidemail = validateEmail(ctl_attribute.inputvalue);

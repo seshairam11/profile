@@ -143,7 +143,7 @@ h6 {
 }
 
 img {
-    max-width: 100%
+    max-width: 80%
 }
 
 .img-centered {
@@ -180,11 +180,34 @@ img {
     background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c6ff, #0072ff)
 }
 
+.btn-black {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 1px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.btn-black:hover,
+.btn-black:focus,
+.btn-black:active,
+.btn-black.active,
+.open .dropdown-toggle.btn-black {
+    border-color: black;
+    color: black;
+    background: whitesmoke
+}
+
 .btn-white {
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid black;
     border-radius: 1px;
-    color: #fff;
+    color: black;
     font-size: 16px;
     font-weight: 400;
     padding: 15px 20px;
@@ -198,10 +221,9 @@ img {
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
-    border-color: #109af7;
+    border-color: black;
     color: #fff;
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c6ff, #0072ff);
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c6ff, #0072ff)
+    background: black
 }
 
 .btn-white2 {
@@ -223,7 +245,7 @@ img {
 .btn-white2.active,
 .open .dropdown-toggle.btn-white2 {
     border-color: #fff;
-    color: #109af7;
+    color: black;
     background-color: #fff
 }
 
@@ -234,6 +256,13 @@ img {
 
 .section-padding {
     padding: 100px 0
+}
+
+.scroll-spy {
+    color: #109af7 !important;
+    animation-duration: 3s !important;
+    animation-timing-function: ease-in-out !important;
+    animation-delay: 1s;
 }
 
 section h2.section-heading {
@@ -327,15 +356,14 @@ section h3.section-subheading {
     color: #222
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover {
     outline: 0;
-    color: #109af7
+    color: #128ee08e
 }
 
 .navbar-default.navbar-shrink .navbar-nav>.active>a {
     border-radius: 0;
-    color: #109af7;
+    /* color: #109af7; */
     background-color: transparent
 }
 
@@ -1167,5 +1195,63 @@ ul.social-buttons li a:active {
 
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px
+    }
+}
+
+
+
+.err-border {
+    border-color: #dc3545 !important;
+}
+
+.err-border:focus {
+    border-color: #dc3545 !important;
+}
+
+/* animation on textbox */
+
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.5rem;
+    }
+
+    75% {
+        margin-left: -0.5rem;
+    }
+
+    100% {
+        margin-left: 0rem;
+    }
+}
+
+.err-border:invalid {
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+
+/* Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.thank-you-text {
+    margin-bottom: 0;
+    /* default for mobile */
+}
+
+/* Apply margin only on tablets and up */
+@media (min-width: 768px) {
+    .thank-you-text {
+        margin-bottom: 32rem;
     }
 }
