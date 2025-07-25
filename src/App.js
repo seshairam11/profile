@@ -116,7 +116,7 @@ function App() {
     <Contact />,
   ]
 
-  const hostname = "http://localhost:3000/";
+  const hostname = "https://whoami-sesha.netlify.app/";
 
 
   const initControl = () => {
