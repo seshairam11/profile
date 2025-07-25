@@ -116,7 +116,7 @@ function App() {
     <Contact />,
   ]
 
-  const hostname = "https://whoami-sesha.netlify.app/";
+  const hostname = "http://localhost:3000/";
 
 
   const initControl = () => {
@@ -850,7 +850,7 @@ function App() {
                     scaleY: 1,
                     transition: { duration: 1 },
                   }}
-                  viewport={{ once: true, amount: "0.2" }}
+                  viewport={{ once: true, amount: "0.5" }}
                   className="col-md-4 col-sm-6 portfolio-item" key={item.id}>
                   <Link onClick={() => { onPortfolioOpen(index) }} className="portfolio-link" data-toggle="modal" >
                     <div className="portfolio-hover">
@@ -1103,23 +1103,20 @@ function App() {
         <>
           <Header />
 
-          {Elements.map((Element, index) => {
-            const Component = Element.type; // Use PascalCase
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                whileInView={{
-                  opacity: 1,
-                  scaleY: 1,
-                  transition: { duration: 0.5 },
-                }}
-                viewport={{ once: true }}
-              >
-                <Component />
-              </motion.div>
-            );
-          })}
+          {Elements.map((Element, index) => (
+            < motion.div
+              key={index}
+              initial={{ opacity: 0, }}
+              whileInView={{
+                opacity: 1,
+                scaleY: 1,
+                transition: { duration: 0.5 },
+              }}
+              viewport={{ amount: "0.2", once: true }}
+            >
+              <Element.type />
+            </motion.div>
+          ))}
         </>
       }
 
