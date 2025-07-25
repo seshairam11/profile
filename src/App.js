@@ -1114,7 +1114,7 @@ function App() {
                   scaleY: 1,
                   transition: { duration: 0.5 },
                 }}
-                viewport={{ amount: "0.2", once: true }}
+                viewport={{ once: true }}
               >
                 <Component />
               </motion.div>
